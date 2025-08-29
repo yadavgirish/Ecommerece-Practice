@@ -7,6 +7,7 @@ import userRouter from "../routes/userRoute.js"
 import productRouter from "../routes/productRouter.js"
 import cartRouter from "../routes/cartRouter.js"
 import orderRouter from "../routes/orderRouter.js"
+import serverless from "serverless-http";
 
 const app = express()
 const port = process.env.PORT || 4000
@@ -26,6 +27,7 @@ app.get('/', (req, res) => {
 })
 
 
-app.listen(port, (err) => {
-    err ? console.log(err) : console.log(`it's running on port : ${port}`)
-})
+// app.listen(port, (err) => {
+//     err ? console.log(err) : console.log(`it's running on port : ${port}`)
+// })
+export const handler = serverless(app);
