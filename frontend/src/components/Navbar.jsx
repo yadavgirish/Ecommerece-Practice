@@ -37,7 +37,7 @@ const Navbar = () => {
         <NavLink
         target="_blank"
           className="flex flex-col gap-1 text-xs border border-gray-200 px-5 py-2 rounded-full mb-2 "
-          to="http://localhost:5173"
+          to="https://forever-admin-khaki-six.vercel.app"
         >
           <p>Admin Panel</p>
         </NavLink>
