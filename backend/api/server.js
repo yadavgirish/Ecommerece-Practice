@@ -1,12 +1,12 @@
 import express from "express"
 import cors from "cors"
 import 'dotenv/config'
-import connectDB from "./config/mongodb.js"
-import connectCloudinary from "./config/cloudinary.js"
-import userRouter from "./routes/userRoute.js"
-import productRouter from "./routes/productRouter.js"
-import cartRouter from "./routes/cartRouter.js"
-import orderRouter from "./routes/orderRouter.js"
+import connectDB from "../config/mongodb.js"
+import connectCloudinary from "../config/cloudinary.js"
+import userRouter from "../routes/userRoute.js"
+import productRouter from "../routes/productRouter.js"
+import cartRouter from "../routes/cartRouter.js"
+import orderRouter from "../routes/orderRouter.js"
 
 const app = express()
 const port = process.env.PORT || 4000
